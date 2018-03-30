@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">		
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	    <meta content="yes" name="apple-mobile-web-app-capable"/>
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+	    <meta content="telephone=no" name="format-detection"/>
+	    <title>汇亚邀请函</title>
+	    <link rel="stylesheet" href="css/animate.min.css" />
+	    <link href="https://cdn.bootcss.com/Swiper/4.2.0/css/swiper.min.css" rel="stylesheet">
+	    <link rel="stylesheet" href="css/csshake.css" />
+	    <link rel="stylesheet" href="css/reset.css" /> 
+	    <link rel="stylesheet" href="css/index.css" />
+	    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	    <script type="text/javascript" src="js/swiper.animate1.0.3.min.js" ></script>
+	    <script type="text/javascript" src="js/resize.js" ></script>
+	    <script src="https://cdn.bootcss.com/Swiper/4.2.0/js/swiper.min.js"></script>
+		
+	</head>
+	<body>
+		<div id="main">
+			<!-- Swiper -->
+		  	<div class="swiper-container">
+		    	<div class="swiper-wrapper">
+				    <div class="swiper-slide">
+				    	<!--首页-->
+				    	<div class="page1">
+				    		<a href="###" class="shake shake-slow shake-constant playgoing"><img src="img/page11.png"/></a>
+				    		<div class="page11">
+				    			<img src="img/page12.png" />
+				    			<div class="mouse shake shake-little shake-constant">
+				    				<img src="img/page14.png" />
+				    			</div>
+				    		</div>
+				    		<div class="page12 ani " swiper-animate-effect="bounceInRight" swiper-animate-duration="1s">
+				    			<img src="img/page13.png" />
+				    		</div>
+				    		<div class="page13 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">
+				    			<img src="img/page15.png" />
+				    		</div>
+				    		<div class="page14 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.2s">
+				    			<img src="img/page15.png" />
+				    		</div>
+				    		<div class="page15 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.2s"  swiper-animate-delay="0.5s">
+				    			<img src="img/page16.png" />
+				    		</div>
+				    	</div>
+				    </div>
+				    <div class="swiper-slide">
+				    	<div class="page2">
+				    		<div class="page21 ani"  swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
+				    			<img src="img/page21.png"/>
+				    		</div>
+				    		<div class="page22 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="0.8s">
+				    			<img src="img/page22.png" />
+				    		</div>
+				    		<div class="page23 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s">
+				    			<img src="img/page23.png" />
+				    		</div>
+				    		<div class="page24 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.1s"  swiper-animate-delay="1.8s">
+				    			<img src="img/page24.gif" />
+				    		</div>
+				    		<div class="page24 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.1s"  swiper-animate-delay="2s">
+				    			<img src="img/page25.gif" />
+				    		</div>
+				    		<div class="page24 page26 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.1s"  swiper-animate-delay="2.2s">
+				    			<img src="img/page26.gif" />
+				    		</div>
+				    	</div>
+				    </div>
+				    <div class="swiper-slide">
+				    	<div class="page3">
+				    		<div class="page31 ani">
+				    			<img src="img/page31.png" />
+				    		</div>
+				    		<div class="page32 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s">
+				    			<img src="img/page35.png" />
+				    		</div>
+				    		<div class="page33 ani"  swiper-animate-effect="bounceIn" swiper-animate-duration="1s"  swiper-animate-delay="0.5s">
+				    			<img src="img/page33.png" />
+				    		</div>
+				    		<div class="page34 ani"  swiper-animate-effect="bounceIn" swiper-animate-duration="1s">
+				    			<img src="img/page34.png" />
+				    		</div>
+				    	</div>
+				    </div>
+				    <div class="swiper-slide">
+				    	<div class="page4">
+				    		
+				    	</div>
+				    </div>
+				    <div class="swiper-slide">Slide 5</div>
+				    <div class="swiper-slide">Slide 6</div>
+				    <div class="swiper-slide">Slide 7</div>
+				    <div class="swiper-slide">Slide 8</div>
+				    <div class="swiper-slide">Slide 9</div>
+				    <div class="swiper-slide">Slide 10</div>
+		   		</div>
+		    </div>
+		</div>
+		
+		<script>
+		    var swiper = new Swiper('.swiper-container', {
+		    	initialSlide :2,
+		      	direction: 'vertical',
+		      	allowSlidePrev : false,
+//		      	allowSlideNext : false,
+		      	pagination: {
+		        	clickable: true,
+		      	},
+		      	 on:{
+			      init: function(){
+			        swiperAnimateCache(this); //隐藏动画元素 
+			        swiperAnimate(this); //初始化完成开始动画
+			      }, 
+			      slideChangeTransitionEnd: function(){ 
+			        swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+			      } 
+			    }
+		    });
+			  </script>
+		  <script type="text/javascript" src="js/index.js" ></script>
+	</body>
+</html>

@@ -1,0 +1,162 @@
+html, body {
+  position: relative;
+  height: 100%; }
+
+#main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  #main .swiper-container {
+    width: 100%;
+    height: 100%; }
+
+.page1 {
+  width: 100%;
+  height: 100%;
+  background: url(../img/page10.png) left top;
+  background-size: 100% 100%;
+  position: relative; }
+  .page1 .playgoing {
+    position: absolute;
+    bottom: 30.1%;
+    right: 3.2%;
+    width: 38.67%;
+    z-index: 3; }
+    .page1 .playgoing > img {
+      width: 100%; }
+  .page1 .page11 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 96%;
+    z-index: 2; }
+    .page1 .page11 > img {
+      width: 100%; }
+    .page1 .page11 .mouse {
+      position: absolute;
+      width: 7.8%;
+      left: 26%;
+      top: 16.5%; }
+      .page1 .page11 .mouse > img {
+        width: 100%; }
+  .page1 .page12 {
+    position: absolute;
+    top: 4.3%;
+    left: 2.13%;
+    width: 86%;
+    z-index: 2; }
+    .page1 .page12 > img {
+      width: 100%; }
+  .page1 .page13 {
+    width: 7.06%;
+    position: absolute;
+    right: 5.47%;
+    top: 15.01%;
+    z-index: 2; }
+    .page1 .page13 > img {
+      width: 100%; }
+  .page1 .page14 {
+    width: 7.06%;
+    position: absolute;
+    right: 0.93%;
+    top: 17.4%;
+    z-index: 2; }
+    .page1 .page14 > img {
+      width: 100%; }
+  .page1 .page15 {
+    width: 71.2%;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    .page1 .page15 > img {
+      width: 100%; }
+
+.page2 {
+  width: 100%;
+  height: 100%;
+  background-color: #cccce3;
+  position: relative; }
+  .page2 .page21 {
+    position: absolute;
+    width: 9.47%;
+    right: 4.8%;
+    top: 20.54%;
+    z-index: 3; }
+    .page2 .page21 > img {
+      width: 100%; }
+  .page2 .page22 {
+    position: absolute;
+    width: 98.53%;
+    left: 1.6%;
+    bottom: 6.3%;
+    z-index: 6; }
+    .page2 .page22 > img {
+      width: 100%; }
+  .page2 .page23 {
+    position: absolute;
+    width: 100%;
+    right: 0%;
+    top: 0%;
+    z-index: 1; }
+    .page2 .page23 > img {
+      width: 100%; }
+  .page2 .page24 {
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    left: 0%; }
+    .page2 .page24 > img {
+      width: 100%; }
+  .page2 .page26 {
+    z-index: 5; }
+
+.page3 {
+  width: 100%;
+  height: 100%;
+  background: url(../img/page32.png) no-repeat center center;
+  background-size: 100% 100%;
+  position: relative; }
+  .page3 .page31 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%; }
+    .page3 .page31 > img {
+      width: 100%; }
+  .page3 .page31 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%; }
+    .page3 .page31 > img {
+      width: 100%; }
+  .page3 .page32 {
+    position: absolute;
+    top: 14.45%;
+    left: 12%;
+    width: 84.27%; }
+    .page3 .page32 > img {
+      width: 100%; }
+  .page3 .page33 {
+    position: absolute;
+    top: 12.45%;
+    left: 31%;
+    width: 65.3%; }
+    .page3 .page33 > img {
+      width: 100%; }
+  .page3 .page34 {
+    position: absolute;
+    bottom: 32%;
+    left: 48%;
+    width: 26.4%; }
+    .page3 .page34 > img {
+      width: 100%; }
+
+.page4 {
+  width: 100%;
+  height: 100%;
+  background-color: #bbe8ea; }
+
+/*# sourceMappingURL=index.css.map */
