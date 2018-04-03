@@ -19,6 +19,28 @@
 		
 	</head>
 	<body>
+		<div class="delete1" hidden="hidden"></div>
+		<!--加载-->
+		<div id="loading">
+			<img src="img/load.gif" />
+			<div class="loadBox">
+				<div class="loadBar">
+					<div></div>
+				</div>
+				<div class="loadText">
+					<p>0%</p>
+				</div>
+			</div>
+		</div>
+		<iframe src="loading.html" hidden="hidden"></iframe>
+		<!--音乐-->
+		<audio id="bg" autoplay="autoplay"  loop="loop" preload  src="music/bg.mp3" hidden="hidden"></audio >
+		<audio id="music1" src="music/music1.mp3" hidden="hidden"  preload></audio>	
+		<audio id="music2" src="music/music2.wav" hidden="hidden"  preload></audio>
+		<audio id="music3" src="music/music3.mp3" hidden="hidden"  preload loop="loop"></audio>
+		<audio id="music4" src="music/music4.mp3" hidden="hidden"  preload loop="loop"></audio>
+		<audio id="music5" src="music/music2.mp3" hidden="hidden"  preload></audio>
+		<audio id="music6" src="music/music5.mp3" hidden="hidden"  preload></audio>
 		<div id="main">
 			<!-- Swiper -->
 		  	<div class="swiper-container">
@@ -26,7 +48,7 @@
 				    <div class="swiper-slide">
 				    	<!--首页-->
 				    	<div class="page1">
-				    		<a href="###" class="shake shake-slow shake-constant playgoing"><img src="img/page11.png"/></a>
+				    		<a href="###" class="shake  playgoing"><img src="img/page11.png"/></a>
 				    		<div class="page11">
 				    			<img src="img/page12.png" />
 				    			<div class="mouse shake shake-little shake-constant">
@@ -34,17 +56,18 @@
 				    			</div>
 				    		</div>
 				    		<div class="page12 ani " swiper-animate-effect="bounceInRight" swiper-animate-duration="1s">
-				    			<img src="img/page13.png" />
-				    		</div>
-				    		<div class="page13 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">
-				    			<img src="img/page15.png" />
-				    		</div>
-				    		<div class="page14 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.2s">
-				    			<img src="img/page15.png" />
+				    			<img src="img/page13.png " />
 				    		</div>
 				    		<div class="page15 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.2s"  swiper-animate-delay="0.5s">
 				    			<img src="img/page16.png" />
 				    		</div>
+				    		<div class="page17">
+				    			<img src="img/page17.gif" />
+				    			<div class="page18">
+					    			<img src="img/page18.png" />
+					    		</div>
+				    		</div>
+				    		
 				    	</div>
 				    </div>
 				    <div class="swiper-slide">
@@ -58,7 +81,7 @@
 				    		<div class="page23 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s">
 				    			<img src="img/page23.png" />
 				    		</div>
-				    		<div class="page24 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.1s"  swiper-animate-delay="1.8s">
+				    		<div class="page24 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"  swiper-animate-delay="1.8s">
 				    			<img src="img/page24.gif" />
 				    		</div>
 				    		<div class="page24 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.1s"  swiper-animate-delay="2s">
@@ -75,10 +98,10 @@
 				    			<img src="img/page31.png" />
 				    		</div>
 				    		<div class="page32 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s">
-				    			<img src="img/page35.png" />
+				    			<img src="img/page35.png"/>
 				    		</div>
 				    		<div class="page33 ani"  swiper-animate-effect="bounceIn" swiper-animate-duration="1s"  swiper-animate-delay="0.5s">
-				    			<img src="img/page33.png" />
+				    			<img src="img/page33.png"/>
 				    		</div>
 				    		<div class="page34 ani"  swiper-animate-effect="bounceIn" swiper-animate-duration="1s">
 				    			<img src="img/page34.png" />
@@ -93,9 +116,7 @@
 				    		<div class="page41 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s">
 				    			<img src="img/page41.png" />
 				    		</div>
-				    		<div class="page42 ani">
-				    			<img src="img/page42.gif" />
-				    		</div>
+				    		
 				    		<div class="page43 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s"  swiper-animate-delay="0.6s">
 				    			<img src="img/page43.png" />
 				    		</div>
@@ -109,9 +130,6 @@
 				    	<div class="page5">
 				    		<div class="page51 ani"  swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s">
 				    			<img src="img/page51.png" />
-				    		</div>
-				    		<div class="page52 ani"  swiper-animate-effect="bounceIn" swiper-animate-duration="1s"  swiper-animate-delay="0.7s">
-				    			<img src="img/page52.png" />
 				    		</div>
 				    		<div class="page53 ani"  >
 				    			<img src="img/page53.png" />
@@ -194,7 +212,12 @@
 				    			<div class="page78">
 				    				<img src="img/page77.png" />	    				
 				    			</div>
-				    			<button></button>
+				    			<button>
+				    				<div class="hand">
+				    					<img src="img/hand.png" />
+				    				</div>
+				    			</button>
+				    			
 				    		</div>
 				    	</div>
 				    	<div class="page7two" style="display: none;">
@@ -214,7 +237,7 @@
 				    			<img src="img/page82.png" />
 				    		</div>
 				    		<div class="page83 ani"  swiper-animate-effect="bounceIn" swiper-animate-duration="1s">
-				    			<img src="img/page83.png" />
+				    			<img src="img/page83.png" class="bas" />
 				    		</div>
 				    		<div class="page84">
 				    			<img src="img/page84.png" />
@@ -233,21 +256,21 @@
 				    		</div>
 				    	</div>
 				    </div>
-				    <div class="swiper-slide">
+				    <div class="swiper-slide swiper-no-swiping">
 				    	<div class="page9">
-				    		<div class="page91 ani">
-				    			<img src="img/page91.png" />
+				    		<div class="page91 ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" >
+				    			<img src="img/page91.png" class="bas"/>
 				    		</div>
 				    		<div class="page92">
-				    			<img src="img/page92.png" />
+				    			<img src="img/page92.gif" />
 				    		</div>
-				    		<div class="page94 ani">
+				    		<div class="page94 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" >
 				    			<img src="img/page94.png" />
 				    		</div>
-				    		<div class="page95 ani">
+				    		<div class="page95 ani"  swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" >
 				    			<img src="img/page95.png" />
 				    		</div>
-				    		<div class="page96 ani">
+				    		<div class="page96 ani" swiper-animate-effect="rubberBand" swiper-animate-duration="1s" >
 				    			<a href="###"><img src="img/page96.png"/></a>
 				    		</div>
 				    	</div>
@@ -256,85 +279,34 @@
 		   		</div>
 		    </div>
 		</div>
-		
+		<!--音乐按钮-->
+		<img src="img/music.png" id="music"/>
 		<script>
-		    var swiper = new Swiper('.swiper-container', {
-		    	initialSlide :7,
-		      	direction: 'vertical',
-		      	allowSlidePrev : false,
-//		      	allowSlideNext : false,
-		      	pagination: {
-		        	clickable: true,
-		      	},
-		      	 on:{
-			      init: function(){
-			        swiperAnimateCache(this); //隐藏动画元素 
-			        swiperAnimate(this); //初始化完成开始动画
-			      }, 
-			      slideChangeTransitionEnd: function(){ 
-			        swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
-			        if(this.activeIndex==4)
-			        {
-			        	$('.page53').removeClass('page533');
-			        		setTimeout(function(){
-			        			$('.page53').css('opacity',1).addClass('page533');
-			        		},1200);
-			        }else if(this.activeIndex==3){
-			        		setTimeout(function(){
-			        			$('.page42').find('img').attr('src','img/page45.png');
-			        		},1200);
-			        }else if(this.activeIndex==5){
-				        	for(var i=0;i<8;i++)
-				        	{
-				        		$('.page6').children('div').eq(2+i).addClass('page6'+(i+1));
-				        	}
-			        		setTimeout(function(){
-			        			$('.page70').css('opacity',1).addClass('page701');
-			        			setTimeout(function(){
-			        				$('.page6').fadeOut();
-			        				$('.page6two').fadeIn();
-			        				setTimeout(function(){
-			        					$('.page751').css('opacity',1).addClass('page7511');
-			        					setTimeout(function(){
-				        					$('.page752').css('opacity',1).addClass('page7522');
-				        					setTimeout(function(){
-					        					$('.page753').css('opacity',1).addClass('page7533');
-					        					setTimeout(function(){
-						        					$('.page754').css('opacity',1).addClass('page7544');
-						        				},400);
-					        				},400);
-				        				},400);
-				        				$('.page73').fadeIn(750,function(){
-				        					$('.page74').fadeIn(750,function(){
-				        						$('.page6').parents('.swiper-slide').removeClass('swiper-no-swiping');
-				        					});
-				        				});
-			        				},400);
-			        			},5000);
-			        		},500);
-			        		
-			        }else if(this.activeIndex==6)
-			        {		        	
-						setTimeout(function(){
-							$('.page78').show();
-							$('.page7in button').on('click',function(){
-				        		$('.page7in').hide();
-				        		$('.page7two').show();
-				        		$('.page78').addClass('page788');
-					        	$('.page79').addClass('page799');
-					        	$('.page80').addClass('page800');
-					        	$('.page81').addClass('page811');
-					        	$('.page82').addClass('page822');
-					        	$('.page7').parents('.swiper-slide').removeClass('swiper-no-swiping');
-				        	});
-						},1000);
-			        	
-			        	
-			        }
-			      } 
-			    }
-		    });
-			  </script>
-		  <script type="text/javascript" src="js/index.js" ></script>
+			 //微信加入音乐
+			function audioAutoPlay(id,v){
+				var audio = document.getElementById(id);
+				    audio.play();
+				    if(v==0)
+				    {
+				    	audio.pause();
+				    }
+				    document.addEventListener("WeixinJSBridgeReady", function () {
+				            audio.play();
+				            if(v==0)
+						    {
+						    	audio.pause();
+						    }
+				    }, false);
+				}    
+			audioAutoPlay('bg');
+			audioAutoPlay('music1',0);
+			audioAutoPlay('music2',0);
+			audioAutoPlay('music3',0);
+			audioAutoPlay('music4',0);
+			audioAutoPlay('music5',0);
+			audioAutoPlay('music6',0);
+		</script>
+		<script type="text/javascript" src="js/index.js" ></script>
+		<div class="delete2" hidden="hidden"></div>
 	</body>
 </html>

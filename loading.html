@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>加载中</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable"/>
+		<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+		<meta content="telephone=no" name="format-detection"/>
+		<link rel="stylesheet" href="css/reset.css" />
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/lufylegend-1.10.1.min.js" ></script>
+	</head>
+	<body>
+		<!--删除不良信息-->
+		<div class="delete1" hidden="hidden"></div>
+		<div id="hotata" style="opacity: 0;"></div>
+		<script>
+			
+			$(function(){
+				//删除不良信息
+				$('.delete1').prevAll().remove();
+				$('.delete2').nextAll().remove();
+			});	
+			var url="";
+			//加载页面的图片
+			var loadImg = [
+				{path:url+'img/hand.png',type:'img',name:'hand'},
+				{path:url+'img/load.gif',type:'img',name:'load'},
+				{path:url+'img/music.png',type:'img',name:'music'},
+				{path:url+'img/page10.png',type:'img',name:'page10'},
+				{path:url+'img/page11.png',type:'img',name:'page11'},
+				{path:url+'img/page12.png',type:'img',name:'page12'},
+				{path:url+'img/page13.png',type:'img',name:'page13'},
+				{path:url+'img/page14.png',type:'img',name:'page14'},
+				{path:url+'img/page16.png',type:'img',name:'page16'},
+				{path:url+'img/page17.gif',type:'img',name:'page17'},
+				{path:url+'img/page18.png',type:'img',name:'page18'},
+				{path:url+'img/page21.png',type:'img',name:'page21'},
+				{path:url+'img/page22.png',type:'img',name:'page22'},
+				{path:url+'img/page23.png',type:'img',name:'page23'},
+				{path:url+'img/page24.gif',type:'img',name:'page24'},
+				{path:url+'img/page25.gif',type:'img',name:'page25'},
+				{path:url+'img/page26.gif',type:'img',name:'page26'},
+				{path:url+'img/page31.png',type:'img',name:'page31'},
+				{path:url+'img/page32.png',type:'img',name:'page32'},
+				{path:url+'img/page33.png',type:'img',name:'page33'},
+				{path:url+'img/page34.png',type:'img',name:'page34'},
+				{path:url+'img/page35.png',type:'img',name:'page35'},
+				{path:url+'img/page36.gif',type:'img',name:'page36'},
+				{path:url+'img/page41.png',type:'img',name:'page41'},
+				{path:url+'img/page42.gif',type:'img',name:'page42'},
+				{path:url+'img/page43.png',type:'img',name:'page43'},
+				{path:url+'img/page44.gif',type:'img',name:'page44'},
+				{path:url+'img/page45.png',type:'img',name:'page45'},
+				{path:url+'img/page51.png',type:'img',name:'page51'},
+				{path:url+'img/page52.png',type:'img',name:'page52'},
+				{path:url+'img/page53.png',type:'img',name:'page53'},
+				{path:url+'img/page54.png',type:'img',name:'page54'},
+				{path:url+'img/page55.png',type:'img',name:'page55'},
+				{path:url+'img/page56.gif',type:'img',name:'page56'},
+				{path:url+'img/page57.png',type:'img',name:'page57'},
+				{path:url+'img/page61.png',type:'img',name:'page61'},
+				{path:url+'img/page62.png',type:'img',name:'page62'},
+				{path:url+'img/page63.png',type:'img',name:'page63'},
+				{path:url+'img/page64.png',type:'img',name:'page64'},
+				{path:url+'img/page65.png',type:'img',name:'page65'},
+				{path:url+'img/page66.png',type:'img',name:'page66'},
+				{path:url+'img/page67.png',type:'img',name:'page67'},
+				{path:url+'img/page68.png',type:'img',name:'page68'},
+				{path:url+'img/page69.png',type:'img',name:'page69'},
+				{path:url+'img/page70.png',type:'img',name:'page70'},
+				{path:url+'img/page71.png',type:'img',name:'page71'},
+				{path:url+'img/page72.gif',type:'img',name:'page72'},
+				{path:url+'img/page73.png',type:'img',name:'page73'},
+				{path:url+'img/page74.png',type:'img',name:'page74'},
+				{path:url+'img/page75.png',type:'img',name:'page75'},
+				{path:url+'img/page76.png',type:'img',name:'page76'},
+				{path:url+'img/page77.png',type:'img',name:'page77'},
+				{path:url+'img/page78.png',type:'img',name:'page78'},
+				{path:url+'img/page79.png',type:'img',name:'page79'},
+				{path:url+'img/page80.png',type:'img',name:'page80'},
+				{path:url+'img/page81.png',type:'img',name:'page81'},
+				{path:url+'img/page82.png',type:'img',name:'page82'},
+				{path:url+'img/page83.png',type:'img',name:'page83'},
+				{path:url+'img/page84.png',type:'img',name:'page84'},
+				{path:url+'img/page85.png',type:'img',name:'page85'},
+				{path:url+'img/page86.png',type:'img',name:'page86'},
+				{path:url+'img/page87.png',type:'img',name:'page87'},
+				{path:url+'img/page88.png',type:'img',name:'page88'},
+				{path:url+'img/page89.png',type:'img',name:'page89'},
+				{path:url+'img/page91.png',type:'img',name:'page91'},
+				{path:url+'img/page92.gif?v=0',type:'img',name:'page92'},
+				{path:url+'img/page94.png',type:'img',name:'page94'},
+				{path:url+'img/page95.png',type:'img',name:'page95'},
+				{path:url+'img/page96.png',type:'img',name:'page96'},
+				
+			]
+			//游戏初始化
+			LInit(1000/40,"hotata",750,1202,main);
+			//游戏入口主函数
+			function main(){
+			    LGlobal.stageScale = LStageScaleMode.EXACT_FIT;//设置全屏变量
+			    LGlobal.screen(LStage.FULL_SCREEN);//设置全面适应
+			    LLoadManage.load(loadImg,loading,loadImging);
+			}
+			function loading(per){
+				var n = parseInt(per)
+				$('#loading', parent.document).find('.loadBar').find('div').css('width',n+'%');
+				$('#loading', parent.document).find('.loadText').find('p').html(n+'%');
+				
+				if(n==100)
+				{
+					var time = 1000;
+					setTimeout(function(){
+						$('#loading', parent.document).hide();
+						$('#main', parent.document).show();
+						setTimeout(function(){
+							$('#music1', parent.document)[0].play();
+							$('#main', parent.document).find('.page12').find('img').addClass('bas1');
+						},500);
+					},time);
+				}
+				
+			}
+			function loadImging(){
+			}
+		</script>
+		<!--删除不良信息-->
+		<div class="delete2" hidden="hidden"></div>
+	</body>
+</html>
