@@ -25,6 +25,7 @@
 			var url="";
 			//加载页面的图片
 			var loadImg = [
+				{path:url+'img/down.png',type:'img',name:'down'},
 				{path:url+'img/hand.png',type:'img',name:'hand'},
 				{path:url+'img/load.gif',type:'img',name:'load'},
 				{path:url+'img/music.png',type:'img',name:'music'},
@@ -117,7 +118,9 @@
 						$('#main', parent.document).show();
 						setTimeout(function(){
 							$('#music1', parent.document)[0].play();
-							$('#main', parent.document).find('.page12').find('img').addClass('bas1');
+							setTimeout((function(){
+								$('#main', parent.document).find('.page12').find('img').addClass('bas4');
+							}),800);
 						},500);
 					},time);
 				}

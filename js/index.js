@@ -27,7 +27,7 @@ $(function(){
 		}
 	});
 	
-	$('#bg')[0].volume=0.8;
+	$('#bg')[0].volume=0.6;
 	//实例化切换
 	var swiper = new Swiper('.swiper-container', {
 		initialSlide: 0,
@@ -46,18 +46,21 @@ $(function(){
 				swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
 				if(this.activeIndex == 1)
 				{
+					$('.swiper-container').find('.swiper-slide').eq(0).children().remove();
 					setTimeout(function() {
-						$('.page22').find('img').addClass('bas2');
-					}, 1200);
+						$('.page22').find('img').addClass('bas5');
+					}, 1400);
 				}else if(this.activeIndex == 2){
+					$('.swiper-container').find('.swiper-slide').eq(1).children().remove();
 					$('#music3')[0].volume = 1;
 					$('#music3')[0].play();
 					setTimeout(function() {
-						$('.page32').find('img').addClass('bas2');
-						$('.page33').find('img').addClass('bas');
-					}, 1100);
+						$('.page32').find('img').addClass('bas5');
+						$('.page33').find('img').addClass('bas5');
+					}, 1300);
 				}
 				else if(this.activeIndex == 3){
+					$('.swiper-container').find('.swiper-slide').eq(2).children().remove();
 					var html = "";
 					html += '<div class="page42 ani"><img src="img/page42.gif" /></div>';
 					$('.page41').after(html);
@@ -65,21 +68,23 @@ $(function(){
 					setTimeout(function() {
 						$('.page42').find('img').attr('src', 'img/page45.png');
 						$('#music2')[0].play();
-						$('.page41').find('img').addClass('bas2');
-					}, 1200);
+						$('.page41').find('img').addClass('bas4');
+					}, 1000);
 				}
 				else if(this.activeIndex == 4) {
 					$('.page53').removeClass('page533');
+					$('.swiper-container').find('.swiper-slide').eq(3).children().remove();
 					$('#music4')[0].play();
 					setTimeout(function() {
-						$('.page51').find('img').addClass('bas2');
+						$('.page51').find('img').addClass('bas5');
 						$('.page53').css('opacity', 1).addClass('page533');
 						setTimeout(function(){
 							$('#music2')[0].play();
 						},100);
 						
-					}, 1200);
+					}, 1000);
 				} else if(this.activeIndex == 5) {
+					$('.swiper-container').find('.swiper-slide').eq(4).children().remove();
 					$('#music4')[0].pause();
 					for(var i = 0; i < 8; i++) {
 						$('.page6').children('div').eq(2 + i).addClass('page6' + (i + 1));
@@ -88,7 +93,7 @@ $(function(){
 						$('.page70').css('opacity', 1).addClass('page701');
 						$('#music5')[0].play();
 						setTimeout(function(){
-							$('.page70').find('img').addClass('bas');
+							$('.page70').find('img').addClass('shanks');
 						},500);
 						setTimeout(function() {
 							$('.page6').fadeOut();
@@ -122,13 +127,14 @@ $(function(){
 					}, 1000);
 	
 				} else if(this.activeIndex == 6) {
+					$('.swiper-container').find('.swiper-slide').eq(5).children().remove();
 //					$('#music4')[0].play();
 //					setTimeout(function() {
 						$('.page78').show();
 						$('#music4')[0].pause();
 						$('.hand').show();
 						$('.page7in button').on('click', function() {
-							$('.page7in').hide();
+							$('.page7in').hide().remove();
 							$('.page7two').show();
 							$('.page78').addClass('page788');
 							$('.page79').addClass('page799');
@@ -143,6 +149,11 @@ $(function(){
 						});
 //					}, 2000);
 	
+				}else if(this.activeIndex == 7) {
+					$('.swiper-container').find('.swiper-slide').eq(6).children().remove();
+					var html = "";
+					html += '<div class="page92 ani"><img src="img/page92.gif" /></div>';
+					$('.page91').after(html);
 				}
 			}
 		}
@@ -154,6 +165,6 @@ $(function(){
 	$('.playgoing').on('click',function(){
 		swiper.slideNext();
 	});
-	var href = "http://www.baidu.com";
+	var href = "http://huiya.hengdikeji.com/api/huiya/index.html";
 	$('.page96').find('a').attr('href',href);
 });
